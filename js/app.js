@@ -1,4 +1,4 @@
-const list = []; 
+let list = []; 
 function addFriend() {    
     const friend = document.getElementById('nome-amigo').value;
     if (!friend) {
@@ -54,4 +54,6 @@ function restart() {
     document.getElementById('lista-amigos').innerHTML = ""; 
     document.getElementById('nome-amigo').value = '';
     document.getElementById('lista-sorteio').innerHTML = '';
+    list = [];
+    
 }
